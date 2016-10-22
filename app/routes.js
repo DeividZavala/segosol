@@ -8,6 +8,9 @@
                 .when('/',{
                     template:`<landing-component></landing-component>`
                 })
+                .when('/catalogo',{
+                    template:`<h1>Catalogo</h1>`
+                })
         }
 
 })();
