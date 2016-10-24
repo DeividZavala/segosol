@@ -11,6 +11,13 @@
                 .when('/productos',{
                     template:`<productos-component></productos-component>`
                 })
+                .when('/contacto',{
+                ('/contacto-component></contacto-component')
+                })
+                .when('/accesorios',{
+                ('/accesorios-component></accesorios-component')
+                })
+                .otherwhise({redirectTo:'/'})
         }
 
 })();
