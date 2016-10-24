@@ -1,0 +1,93 @@
+@keyframes anima{
+  0%{
+    color:black;
+    /*transform:rotate(10deg);*/
+  }
+  100%{
+  	color:yellow;
+  }
+
+}
+.logis{
+	width:30%;
+	margin-left:35%;
+}
+
+#mensage{
+	margin-top:8%;
+	font-family: 'Comfortaa', cursive;
+
+}
+.icon:hover{
+	cursor:pointer;	
+}
+.tittle{
+	font-size:25px;
+	font-family: 'Comfortaa', cursive;
+}
+.textin{
+	font-family: 'Comfortaa', cursive;
+
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height:200px;
+  color: rgba(255,255,255,.9);
+}
+
+footer.page-footer {
+     margin:0;
+     height:450px;
+     width:100%;
+     display:inline-flex;
+	}
+.redes{
+	border-radius:50%;
+	border:2px solid white;
+	width:60px;
+	height:60px;
+	padding-top:5px;
+	font-size:30px;
+	
+}
+.redess{
+	text-align:center;
+	display:flex;
+	margin-bottom:30px;
+	justify-content:space-between;
+	margin:0 100px 0 100px;
+	margin-top:30px;
+
+}
+.footer{
+	width:100%;
+}
+.nosotros{
+	text-align:left;
+}
+
+.siguenos{
+	margin-top:10%;
+	text-align:center;
+	color:white;
+}
+.siguenos span{
+	font-size:20px;
+	font-family: 'Comfortaa', cursive;
+
+}
+.titulin{
+	font-family: 'Poiret One', cursive;
+	font-weight:bolder;
+	color:white;
+}
+.textito{
+		font-family: 'Poiret One', cursive;
+		color:white;
+		font-weight:bold;
+}
+.direccion{
+	text-align:center;
+	color:white;
+}
