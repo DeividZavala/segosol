@@ -1,13 +1,13 @@
 (function(){
 
 
-	var articulo={
+	var accesorio={
 		templateUrl:'app/components/articulos/articulos.html',
-		controlle:articulosController
+		controlle:accesoriosController
 	}
 
 
 	angular
 		.module('segosol')
-		.component('articulosComponent', articulo)
+		.component('accesoriosComponent', accesorio)
 })();
