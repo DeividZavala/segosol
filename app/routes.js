@@ -17,6 +17,7 @@
                 .when('/accesorios',{
                      template: `<accesorios-component></accesorios-component>`
                 })
+                
         }
 
 })();
