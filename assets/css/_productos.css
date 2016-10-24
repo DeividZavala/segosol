@@ -10,7 +10,8 @@
 .contenedor{
 	width:80%;
 	margin: 0 auto;
+	padding:5% 0 5% 0;
 }
 .card{
-	margin-top:50px;
+	margin:25px 0px 25px 0px;
 }
