@@ -1,13 +1,13 @@
 (function () {
 
-    var landing = {
-        templateUrl:'/app/components/landing/landing.html',
-        controller:landingController
+    var contacto = {
+        templateUrl:'/app/components/contacto/contacto.html',
+        controller:contactoController
     }
-    	function landingController(){
+    	function contactoController(){
     	}
 
     angular
         .module('segosol')
-        .component('landingComponent',landing);
+        .component('contactoComponent',contacto);
 })();
