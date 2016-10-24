@@ -12,11 +12,12 @@
                     template:`<productos-component></productos-component>`
                 })
                 .when('/contacto',{
-                ('/contacto-component></contacto-component')
+                     template: ('/contacto-component></contacto-component')
                 })
                 .when('/accesorios',{
-                ('/accesorios-component></accesorios-component')
+                template: ('/accesorios-component></accesorios-component')
                 })
+
                 .otherwhise({redirectTo:'/'})
         }
 
