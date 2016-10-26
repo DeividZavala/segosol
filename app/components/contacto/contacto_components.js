@@ -7,6 +7,7 @@
     	function contactoController(){
     		$('select').material_select();
 
+
     	}
 
     angular
