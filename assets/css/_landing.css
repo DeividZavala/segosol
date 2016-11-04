@@ -38,10 +38,11 @@
 
 footer.page-footer {
      margin:0;
-     height:450px;
+     height:auto;
      width:100%;
      display:inline-flex;
 	}
+
 .redes{
 	border-radius:50%;
 	border:2px solid white;
@@ -91,3 +92,4 @@ footer.page-footer {
 	text-align:center;
 	color:white;
 }
+

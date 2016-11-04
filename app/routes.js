@@ -17,6 +17,9 @@
                 .when('/accesorios',{
                      template: `<accesorios-component></accesorios-component>`
                 })
+                .when('/admin',{
+                    template: `<admin-component></admin-component>`
+                })
                 
         }
 

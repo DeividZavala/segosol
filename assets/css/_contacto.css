@@ -13,6 +13,14 @@
 		font-family: 'Poiret One', cursive;
 
 }
+#direct{
+	text-align:center;
+	margin-top:60px;
+
+}
+.text{
+	font-size:18px;
+}
  /* label color */
    .input-field label {
      color: #000;
@@ -35,4 +43,15 @@
    /* icon prefix focus color */
    .input-field .prefix.active {
      color: #98D2D0;
+   }
+
+   @media(max-width: 768px){
+   	.siguenos{
+   		display:inline-block;
+   	}
+   	.redess{
+   		margin:15px 0 15px 0;
+   		width:100%;
+
+   	}
    }
