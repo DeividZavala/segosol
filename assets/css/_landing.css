@@ -126,7 +126,7 @@ footer.page-footer {
 .efectito_y:hover > img{
 	transform: scaleX(-1);
 }
-img{
+.tarjeta img{
 	transition:all .5s ease;
 }
 a:link{
