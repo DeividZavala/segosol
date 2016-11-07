@@ -5,3 +5,8 @@ form .row i{
 .row .btn{
 	background-color: #000;
 }
+
+.filter{
+	font-family: 'Comfortaa', cursive;
+	text-align:center;
+}
