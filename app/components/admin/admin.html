@@ -1,19 +1,99 @@
+
+
+
+<section>
+<div class="container">
+
+
 <h3>Bienvenido al Panel de Administrador</h3>
-<button>Agregar un producto</button>
+<p>Sube nuevos items al catálogo completando el formulario</p>
+
+<form ng-valid>
+  <div class="row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-sun-o"> Artículo</i>
+          <input type="text" placeholder="Nombre del producto" class="validate">
+          
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-pagelines"> Descripción</i>
+          <textarea class="materialize-textarea" placeholder="Descripción del producto"></textarea>     
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-cloud"> Categoría</i>
+          <select >
+               <option class='text' value="" disabled selected>Elige la categoría a la que pertenece</option>
+                <option value="1">Batería de Gel</option>
+                <option value="2">Controlador SL</option>
+                <option value="3">Controlador Digital</option>
+                <option value="3">Tepocontrolador</option>
+                <option value="3">Inversor</option>
+                <option value="3">Microinversor</option>
+                <option value="3">Panel</option>
+                <option value="3">Focos LED</option>
+                <option value="3">Reflector de LED</option>
+                <option value="3">Arbotante</option>
+                <option value="3">Aerogenerador</option>
+                <option value="3">Calentadores Solares</option>
+                <option value="3">Cámara de vigilancia</option>
+          </select>
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-tree"> Imágen</i>
+          <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text"  placeholder="Sube la imágen del producto">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="input-field col m4 offset-m5">
+          <input class="btn" type="submit" value="Agregar">
+    </div>
+    <br>
+  </div>
+
+  
+
+</form> 
+</div>
+</section>
 <br>
-<container>
-	<!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+	<!-- Modal Trigger 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>-->
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Inicia Sesión</h4>
+      <input type="email" placeholder="usuario@segosol.com">
+      <input type="password" placeholder="password">
     </div>
     <div class="modal-footer">
-      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#/admin" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
   </div>
 
-</container>
+
+

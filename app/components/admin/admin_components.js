@@ -6,6 +6,7 @@
     }
     	function adminController(){
     		    $('.modal-trigger').leanModal();
+                $('select').material_select();
 
 
     	}

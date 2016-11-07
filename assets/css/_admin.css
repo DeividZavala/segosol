@@ -1,1 +1,7 @@
-admin.css
+form .row i{
+	font-size: 3em;
+}
+
+.row .btn{
+	background-color: #000;
+}
