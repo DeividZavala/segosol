@@ -45,7 +45,7 @@ footer.page-footer {
 
 .redes{
 	border-radius:50%;
-	border:2px solid white;
+	border:0px ;
 	width:60px;
 	height:60px;
 	padding-top:5px;
@@ -59,7 +59,6 @@ footer.page-footer {
 	justify-content:space-between;
 	margin:0 100px 0 100px;
 	margin-top:30px;
-
 }
 .footer{
 	width:100%;
@@ -120,4 +119,19 @@ footer.page-footer {
   border-radius:15px;
   height:180px;
   
+}
+.efectito_y{
+	transition:all 0.2s ease;
+}
+.efectito_y:hover > img{
+	transform: scaleX(-1);
+}
+img{
+	transition:all .5s ease;
+}
+a:link{
+	color:white;
+}
+a:visited{
+	color:white;
 }

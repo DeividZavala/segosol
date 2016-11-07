@@ -1,0 +1,90 @@
+
+
+
+<section>
+<div class="container">
+
+
+<h3 class='filter'>Bienvenido al Panel de Administrador</h3>
+<p class='filter'>Sube nuevos items al catálogo completando el formulario</p>
+
+<form ng-valid>
+  <div class=" panel row">
+    
+    <div class="input-field col m12">
+          <i class=" fa fa-sticky-note-o" aria-hidden="true"></i>
+          <span class='texts'>Nombre</span>
+
+          <input type="text" placeholder="Nombre del producto" class="validate">
+          
+    </div>
+  </div>
+
+  <div class=" panel row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-list" aria-hidden="true"></i>
+          <span class='texts'>Descripción</span>
+          
+          <textarea class="materialize-textarea" placeholder="Descripción del producto"></textarea>     
+    </div>
+  </div>
+
+  <div class="panel row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+
+          <span class='texts'>Categoría</span>
+          <select >
+               <option class='text' value="" disabled selected>Elige la categoría a la que pertenece</option>
+                <option value="1">Batería de Gel</option>
+                <option value="2">Controlador SL</option>
+                <option value="3">Controlador Digital</option>
+                <option value="3">Tepocontrolador</option>
+                <option value="3">Inversor</option>
+                <option value="3">Microinversor</option>
+                <option value="3">Panel</option>
+                <option value="3">Focos LED</option>
+                <option value="3">Reflector de LED</option>
+                <option value="3">Arbotante</option>
+                <option value="3">Aerogenerador</option>
+                <option value="3">Calentadores Solares</option>
+                <option value="3">Cámara de vigilancia</option>
+          </select>
+    </div>
+  </div>
+
+  <div class="panel row">
+    
+    <div class="input-field col m12">
+          <i class="fa fa-picture-o" aria-hidden="true"></i>
+           <span class='texts'>Imagen</span>
+          <div class="file-field input-field">
+          <div class="btn">
+            <span>File</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text"  placeholder="Sube la imágen del producto">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    
+    <div class="input-field col m2 offset-m3">
+          <input class="btn" type="submit" value="Agregar">
+    </div>    
+    <div class="input-field col m2 offset-m3">
+          <input class="btn" type="submit" value="Volver">
+    </div>
+    <br>
+  </div>
+
+  
+
+</form> 
+</div>
+</section>

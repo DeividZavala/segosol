@@ -20,6 +20,9 @@
                 .when('/admin',{
                     template: `<admin-component></admin-component>`
                 })
+                .when('/admin/nuevo',{
+                    template: `<nuevo-component></nuevo-component>`
+                })
                 
         }
 
