@@ -1,4 +1,4 @@
 (function () {
     angular
-        .module('segosol',['ngRoute']);
+        .module('segosol',['ngRoute','firebase']);
 })();

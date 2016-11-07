@@ -23,6 +23,9 @@
         <li><a href="#/productos" style='color :#F9BA6C'>Productos</a></li>
         <li><a href="#/accesorios" style='color :#F9BA6C'>Accesorios</a></li>
         <li><a href="#/contacto" style='color :#F9BA6C'>Contacto</a></li>
+        <li ng-show="user">
+          priobando
+        </li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li>
@@ -64,7 +67,7 @@
                  
                 </div>
 								<div class='redes'>
-                <a href="mailto:segosol.hidalgo@gmail.com"">
+                <a href="mailto:segosol.hidalgo@gmail.com">
 									<i class="fa fa-google-plus" aria-hidden="true"></i></div>
 								<div class='redes'>
 									<i class="fa fa-instagram" aria-hidden="true"></i>
@@ -86,6 +89,21 @@
 
     <script src="/bower_components/angular/angular.js"></script>
     <script src="/bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <!-- Angular fire -->
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCciFNZYI-lifaUFOoZCXRoG8R242IDI38",
+          authDomain: "demo3-d6567.firebaseapp.com",
+          databaseURL: "https://demo3-d6567.firebaseio.com",
+          storageBucket: "demo3-d6567.appspot.com",
+          messagingSenderId: "917972955768"
+        };
+        firebase.initializeApp(config);
+    </script>
+
     <script src="app/app.js"></script>
     <script src="/app/routes.js"></script>
     <script src="/app/components/landing/landing_components.js"></script>

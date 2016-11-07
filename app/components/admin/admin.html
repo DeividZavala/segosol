@@ -7,19 +7,53 @@
 
 <h3 class='bienvenido'>Bienvenido al Panel de Administrador</h3>
 
-<div>
-  <form class="login">
+
+
+<div ng-hide="user">
+  <form ng-submit="logIn()" class="login">
     <h1 class="login-title">Login</h1>
-    <input style='width: 90%;height: 50px;margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
+    <input ng-model="email" style='width: 90%;height: 50px;margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
     ' type="text" class="login-uno" placeholder="Email" autofocus>
-    <input style='width: 90%;height: 50px;margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
+    <input ng-model="pass" style='width: 90%;height: 50px;margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
     ' type="password" class="login-uno" placeholder="Password">
     <input type="submit" value="Iniciar Sesión" class="login-button">
   <p class="login-lost"><a href="">Olvidaste tu contrasena?</a></p>
   </form>
-
-<div class='btn'>
-    Ver todos los productos
 </div>
+
+
+<article ng-show="user">
+  <button ng-click="logOut()">CerrarSesión</button>
+
+  <div id="productos">
+  <ul class="collection">
+
+
+    <li ng-repeat="producto in productos" class="collection-item avatar">
+      <img src="{{producto.img}}" alt="" class="circle">
+      <span class="title">{{producto.nombre}}</span>
+      <p>
+        {{producto.$id}} -
+        {{producto.cat}}
+        <br>
+        {{producto.des}}
+      </p>
+      <button ng-click="borrar(producto)" class="waves-effect btn red secondary-content">
+        Borrar
+      </button>
+    </li>
+
+
+
+  </ul>
+
+
+
+  </div>
+
+
+
+</article>
+
 
 
