@@ -41,6 +41,7 @@
             $scope.logOut = function(){
                 $scope.authObj.$signOut();
                 console.log('sesion cerrada');
+                window.location.reload();
             } //logout
 
             $scope.traeProductos = function(){

@@ -1,30 +1,49 @@
-<div class='navuno'>
-</div>
 
-<section id='portada'>
-    </section>
+<div class="col-md-4">
+             <div class="input-group">
+
+                    <select ng-model="searchField.categoria" class="form-control">
+                      
+                         <select ng-model="nuevoP.cat" class="browser-default">
+                             <option value="">Filtro por categoría</option>
+                              <option value="Energía Solar">Energía Solar</option>
+                              <option value="Paneles Solares">Paneles Solares</option>
+                              <option value="Iluminación Led">Iluminación Led</option>
+                              <option value="Enegía eólica">Enegía eólica</option>
+                              <option value="Cercas eléctricas solares">Cercas eléctricas solares</option>
+                              <option value="Cámara de vigilancia">Cámara de vigilancia</option>
+                              <option value="Calentadores Solares">Calentadores Solares</option>
+                              <option value="Otros">Otros</option>
+                   </select>
+             </div>   
+
+             </div>
     <div class='contenedor'>
 
     	<container class='row'>
-        <section  ng-repeat="prod in $ctrl.items">
+        <section  ng-repeat="prod in productos">
       		<div class=" col s12 m6 l4">
-            <div class=" tarjeta card">
-          		<div class="card-image waves-effect waves-block waves-light">
-            			<img class="image activator" src="{{prod.imagen}}">
+            <div class=" tarjetina card">
+          		
+            <div class='foto'>
+              <div class="card-image waves-effect waves-block waves-light">
+            			<img class="imagen activator" src="{{prod.img}}">
           		</div>
+              </div>
          			 <div class="card-content">
-          			  <span class="card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
-          			  <p><a href="#">Detalle</a></p>
+          			  <span class="textitos card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
         			</div>
          			<div class="card-reveal">
-            			<span class="card-title grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">close</i></span>
-           			 <p>{{prod.descripcion}}</p>
+            			<span class="textitos card-title grey-text text-darken-4">{{prod.nombre}}
+                  <i class="material-icons right">close</i></span>
+           			 <p> {{prod.cat}}
+                 <br>
+                 {{prod.des}}
+
+                 </p>
           		</div>
             </div>
     </div>
-    </section>
-	</container>	
-</div>
 
 
 

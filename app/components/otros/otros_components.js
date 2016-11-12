@@ -1,13 +1,13 @@
 (function () {
 
-	var accesorio={
-		templateUrl:'app/components/accesorios/accesorios.html',
-		controller:accesoriosController
+	var otros={
+		templateUrl:'app/components/otros/otros.html',
+		controller:otrosController
 	}
 	
-	function accesoriosController(){
-		var accesorios = this;
-		accesorios.arts = arts;
+	function otrosController(){
+		var otros = this;
+		otros.arts = arts;
 	}
 
 	var arts = [
@@ -32,5 +32,5 @@
 
 	angular
 		.module('segosol')
-		.component('accesoriosComponent', accesorio);
+		.component('otrosComponent', otros);
 })();

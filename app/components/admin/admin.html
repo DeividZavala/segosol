@@ -12,9 +12,9 @@
 <div ng-hide="user">
   <form ng-submit="logIn()" class="login">
     <h1 class="login-title">Login</h1>
-    <input ng-model="email" style='width: 90%;height: 50px;margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
+    <input ng-model="email" style='width: 90%;height: 50px;margin-left:3%; margin-bottom: 25px;padding-left:5%;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
     ' type="text" class="login-uno" placeholder="Email" autofocus>
-    <input ng-model="pass" style='width: 90%;height: 50px;margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
+    <input ng-model="pass" style='width: 90%;height: 50px;margin-left:3%; margin-bottom: 25px;padding-left:10px;font-size: 15px;background: #fff;border: 1px solid #ccc;border-radius: 4px;
     ' type="password" class="login-uno" placeholder="Password">
     <input type="submit" value="Iniciar Sesión" class="login-button">
   <p class="login-lost"><a href="">Olvidaste tu contrasena?</a></p>
@@ -22,8 +22,13 @@
 </div>
 
 
-<article ng-show="user">
-  <button ng-click="logOut()">CerrarSesión</button>
+<article ng-show="user"> 
+<div class='row boton'>
+<a href="#/admin/nuevo">
+  <button style='background-color:#80cbc4;' class='col l2 offset-l7 col m4 col s5 btn'>Agregar</button></a>
+
+  <button style='background-color:#80cbc4;' class='col l2 offset-l1 col m4 offset-m4 col s5 offset-s1 btn' ng-click="logOut()">Cerrar Sesión</button>
+</div>
 
   <div id="productos">
   <ul class="collection">
@@ -33,12 +38,13 @@
       <img src="{{producto.img}}" alt="" class="circle">
       <span class="title">{{producto.nombre}}</span>
       <p>
-        {{producto.$id}} -
+        {{producto.$id}} 
+        <br>
         {{producto.cat}}
         <br>
         {{producto.des}}
       </p>
-      <button ng-click="borrar(producto)" class="waves-effect btn red secondary-content">
+      <button ng-click="borrar(producto)" style='background-color:#ffd180;' class="waves-effect btn secondary-content">
         Borrar
       </button>
     </li>
