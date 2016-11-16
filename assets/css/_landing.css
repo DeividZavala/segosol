@@ -128,7 +128,7 @@ footer.page-footer {
 	transition:all 0.2s ease;
 	height:200px;
 }
-.efectito_y:hover > img{
+.efectito_y:hover > a img{
 	transform: scaleX(-1);
 }
 .foto img{
