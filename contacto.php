@@ -7,10 +7,10 @@
 
 <?php
 echo("Sistema de Mensajes FixTeR");
-$nombre = $_POST['anme'];
+$nombre = $_POST['name'];
 $email = $_POST['email'];
 $tel=$_POST['tel'];
-$lista = $_POST['list']
+$lista = $_POST['list'];
 $mensaje = $_POST['msj'];
 $asunto=$_POST['asunto'];
 $para = 'contacto@fixter.org, contacto@fixter.org';
