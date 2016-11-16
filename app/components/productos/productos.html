@@ -15,33 +15,33 @@
       </article>
     </section>
     <div class='contenedor'>
-
-    <h4 class='filter'>Nuestros Productos</h4>
-    	<container class='row'>
-        <section  ng-repeat="prod in productos | filter:searchField.categoria">
-      		<div class=" col s12 m6 l4">
-            <div class=" tarjetina card">
-          		
-            <div class='foto'>
-              <div class="card-image waves-effect waves-block waves-light">
-            			<img class="imagen activator" src="{{prod.img}}">
-          		</div>
-              </div>
-         			 <div class="card-content">
-          			  <span class="textitos card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
-        			</div>
-         			<div class="card-reveal">
-            			<span class="textitos card-title grey-text text-darken-4">{{prod.nombre}}
+      <h4 class='filter'>Nuestros Productos</h4>
+      	<container class='row'>
+          <section  ng-repeat="prod in productos | filter:searchField.categoria">
+        		<div class=" col s12 m6 l4">
+              <div class=" tarjetina card">
+                <div class='foto'>
+                  <div class="card-image waves-effect waves-block waves-light">
+                			<img class="imagen activator" src="{{prod.img}}">
+              		</div>
+                </div>
+             		<div class="card-content">
+              		<span class="textitos card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
+            		</div>
+             		<div class="card-reveal">
+                	<span class="textitos card-title grey-text text-darken-4">{{prod.nombre}}
                   <i class="material-icons right">close</i></span>
-           			 <p> {{prod.cat}}
-                 <br>
-                 {{prod.des}}
+               		<p> {{prod.cat}}
+                  <br>
+                  {{prod.des}}
 
-                 </p>
-          		</div>
+                  </p>
+              	</div>
+              </div>
             </div>
+          </section>
+        </container>
     </div>
-
 
 
 

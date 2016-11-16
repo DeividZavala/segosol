@@ -1,26 +1,21 @@
 
 
 
-<div class='contenedor'>
-<h6>Lupis</h6>
-
-	<container class='row'>
-    <section  ng-repeat="prod in $ctrl.arts">
-  		<div class=" col s12 m6 l4">
-        <div class="card">
-      		<div class="card-image waves-effect waves-block waves-light">
-        			<img class="activator" src="{{prod.imagen}}">
-      		</div>
-     			 <div class="card-content">
-      			  <span class="card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
-      			  <p><a href="#">Detalle</a></p>
-    			</div>
-     			<div class="card-reveal">
-        			<span class="card-title grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">close</i></span>
-       			 <p>{{prod.descripcion}}</p>
-      		</div>
-        </div>
-    	</div>
-    </section>
-	</container>	
+<div class='row'>
+  <h4 class='filter'>Nuestros proyectos</h4>
+  <br>
+  <br>
+  <div class='proyects col l2 offset-l2'>
+    <h5 class='nombres'>Interconexión</h5>
+  </div>
+  <div class='col l8'>
+    <img style='width:90%; margin-left:5%' class=' col l6' src="/assets/images/inter.png">
+  </div>
+  <br>
+  <div class='proyects col l2 offset-l2'>
+    <h5 class='nombres'>Sistema Isla</h5>
+  </div>
+  <div class='col l8'>
+  <img style='width:90%; margin-left:5%' src="/assets/images/inter2.png">
+  </div>
 </div>
