@@ -1,23 +1,4 @@
 
-<!--<div class="col-md-4">
-             <div class="input-group">
-
-                    <select ng-model="searchField.categoria" class="form-control">
-                      
-                         <select ng-model="nuevoP.cat" class="browser-default">
-                             <option value="">Filtro por categoría</option>
-                              <option value="Energía Solar">Energía Solar</option>
-                              <option value="Paneles Solares">Paneles Solares</option>
-                              <option value="Iluminación Led">Iluminación Led</option>
-                              <option value="Enegía eólica">Enegía eólica</option>
-                              <option value="Cercas eléctricas solares">Cercas eléctricas solares</option>
-                              <option value="Cámara de vigilancia">Cámara de vigilancia</option>
-                              <option value="Calentadores Solares">Calentadores Solares</option>
-                              <option value="Otros">Otros</option>
-                   </select>
-             </div>   
-
-             </div>-->
     <section class="container">
       <article class="row">
         <label>Filtra los productos</label>
@@ -35,6 +16,7 @@
     </section>
     <div class='contenedor'>
 
+    <h4 class='filter'>Nuestros Productos</h4>
     	<container class='row'>
         <section  ng-repeat="prod in productos | filter:searchField.categoria">
       		<div class=" col s12 m6 l4">
