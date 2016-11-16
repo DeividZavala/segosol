@@ -22,7 +22,7 @@
                 .when('/',{
                     template:`<landing-component></landing-component>`
                 })
-                .when('/productos',{
+                .when('/productos/:category',{
                     template:`<productos-component></productos-component>`
                 })
                 .when('/contacto',{

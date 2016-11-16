@@ -2,7 +2,7 @@
     <section class="container">
       <article class="row">
         <label>Filtra los productos</label>
-        <select class="browser-default" ng-model="searchField.categoria">
+        <select class="browser-default" ng-model="categoria_producto">
           <option value="" disabled selected>Filtro por categoría</option>
           <option value="Energía Solar">Energía Solar</option>
           <option value="Paneles Solares">Paneles Solares</option>
@@ -11,13 +11,15 @@
           <option value="Cercas eléctricas solares">Cercas eléctricas solares</option>
           <option value="Cámara de vigilancia">Cámara de vigilancia</option>
           <option value="Calentadores Solares">Calentadores Solares</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="" ng-click="recargar()">Todos</option>
         </select>
       </article>
     </section>
     <div class='contenedor'>
       <h4 class='filter'>Nuestros Productos</h4>
       	<container class='row'>
-          <section  ng-repeat="prod in productos | filter:searchField.categoria">
+          <section  ng-repeat="prod in productos | filter:categoria_producto">
         		<div class=" col s12 m6 l4">
               <div class=" tarjetina card">
                 <div class='foto'>
