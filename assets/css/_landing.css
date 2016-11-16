@@ -1,13 +1,4 @@
-@keyframes anima{
-  0%{
-    color:black;
-    /*transform:rotate(10deg);*/
-  }
-  100%{
-  	color:yellow;
-  }
 
-}
 .logis{
 	width:30%;
 	margin-left:35%;
@@ -46,7 +37,7 @@ footer.page-footer {
 .redes{
 	border-radius:50%;
 	border:0px ;
-	width:60px;
+	width:30%;
 	height:60px;
 	padding-top:5px;
 	font-size:30px;
@@ -88,12 +79,23 @@ footer.page-footer {
 		font-weight:bold;
 }
 .direccion{
-	text-align:center;
 	color:white;
+	text-align:center;}
+/*.calle{
+	float:left;
+	margin-left:100px;
 }
+.tel{
+	float:right;
+	margin-right:100px;
+}*/
 .section{
 	width:100%;
 }
+.productos{
+	width:80%;
+}
+
 .tarjeta{
 	cursor:pointer;
 	width:80%;
@@ -106,10 +108,11 @@ footer.page-footer {
 	box-shadow: 3px 4px 23px -10px rgba(0,0,0,1);
 	height:250px;
 
-
 }
-.productos{
-	width:80%;
+
+.foto{
+	width:100%;
+	height:auto;
 }
 .filter{
 	font-family: 'Comfortaa', cursive;
@@ -117,16 +120,18 @@ footer.page-footer {
 }
 .image{
   border-radius:15px;
-  height:180px;
+  height:200px;
+  max-width:100%;
   
 }
 .efectito_y{
 	transition:all 0.2s ease;
+	height:200px;
 }
 .efectito_y:hover > img{
 	transform: scaleX(-1);
 }
-.tarjeta img{
+.foto img{
 	transition:all .5s ease;
 }
 a:link{

@@ -22,14 +22,14 @@
                 .when('/',{
                     template:`<landing-component></landing-component>`
                 })
-                .when('/productos',{
+                .when('/productos/:category',{
                     template:`<productos-component></productos-component>`
                 })
                 .when('/contacto',{
                      template: `<contacto-component></contacto-component>`
                 })
-                .when('/accesorios',{
-                     template: `<accesorios-component></accesorios-component>`
+                .when('/otros',{
+                     template: `<otros-component></otros-component>`
                 })
                 .when('/admin',{
                     template: `<admin-component></admin-component>`

@@ -1,31 +1,49 @@
-<div class='navuno'>
-</div>
 
-<section id='portada'>
+    <section class="container">
+      <article class="row">
+        <label>Filtra los productos</label>
+        <select class="browser-default" ng-model="categoria_producto">
+          <option value="" disabled selected>Filtro por categoría</option>
+          <option value="Energía Solar">Energía Solar</option>
+          <option value="Paneles Solares">Paneles Solares</option>
+          <option value="Iluminación Led">Iluminación Led</option>
+          <option value="Enegía eólica">Enegía eólica</option>
+          <option value="Cercas eléctricas solares">Cercas eléctricas solares</option>
+          <option value="Cámara de vigilancia">Cámara de vigilancia</option>
+          <option value="Calentadores Solares">Calentadores Solares</option>
+          <option value="Accesorios">Accesorios</option>
+          <option value="" ng-click="recargar()">Todos</option>
+        </select>
+      </article>
     </section>
     <div class='contenedor'>
+      <h4 class='filter'>Nuestros Productos</h4>
+      	<container class='row'>
+          <section  ng-repeat="prod in productos | filter:categoria_producto">
+        		<div class=" col s12 m6 l4">
+              <div class=" tarjetina card">
+                <div class='foto'>
+                  <div class="card-image waves-effect waves-block waves-light">
+                			<img class="imagen activator" src="{{prod.img}}">
+              		</div>
+                </div>
+             		<div class="card-content">
+              		<span class="textitos card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
+            		</div>
+             		<div class="card-reveal">
+                	<span class="textitos card-title grey-text text-darken-4">{{prod.nombre}}
+                  <i class="material-icons right">close</i></span>
+               		<p> {{prod.cat}}
+                  <br>
+                  {{prod.des}}
 
-    	<container class='row'>
-        <section  ng-repeat="prod in $ctrl.items">
-      		<div class=" col s12 m6 l4">
-            <div class=" tarjeta card">
-          		<div class="card-image waves-effect waves-block waves-light">
-            			<img class="image activator" src="{{prod.imagen}}">
-          		</div>
-         			 <div class="card-content">
-          			  <span class="card-title activator grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">more_vert</i></span>
-          			  <p><a href="#">Detalle</a></p>
-        			</div>
-         			<div class="card-reveal">
-            			<span class="card-title grey-text text-darken-4">{{prod.nombre}}<i class="material-icons right">close</i></span>
-           			 <p>{{prod.descripcion}}</p>
-          		</div>
+                  </p>
+              	</div>
+              </div>
             </div>
+          </section>
+        </container>
     </div>
-    </section>
-	</container>	
-</div>
-
 
 
 
